@@ -329,7 +329,7 @@ extension Mapper {
 //		if JSONSerialization.isValidJSONObject(JSONObject as! [String:Any]) {
 			let JSONData: Data?
 			do {
-				JSONData = try JSONSerialization.data(withJSONObject: JSONObject as! [String:Any], options: options)
+				JSONData = try JSONSerialization.data(withJSONObject: JSONObject, options: options)
 			} catch let error {
 				print(error)
 				JSONData = nil
