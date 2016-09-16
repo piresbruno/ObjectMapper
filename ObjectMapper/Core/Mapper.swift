@@ -326,7 +326,7 @@ extension Mapper {
 	
 	/// Converts an Object to JSON data with options
 	public static func toJSONData(_ JSONObject: Any, options: JSONSerialization.WritingOptions) -> Data? {
-		if JSONSerialization.isValidJSONObject(JSONObject as! [String:Any]) {
+//		if JSONSerialization.isValidJSONObject(JSONObject as! [String:Any]) {
 			let JSONData: Data?
 			do {
 				JSONData = try JSONSerialization.data(withJSONObject: JSONObject as! [String:Any], options: options)
@@ -336,9 +336,9 @@ extension Mapper {
 			}
 			
 			return JSONData
-		}
+//		}
 		
-		return nil
+//		return nil
 	}
 }
 
